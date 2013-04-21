@@ -1,0 +1,20 @@
+Source: icinga2
+Section: unknown
+Priority: extra
+Maintainer: Alexander Wirt <formorer@debian.org>
+Build-Depends: autotools-dev,
+               debhelper (>= 9),
+               libboost-dev,
+               libboost-system-dev,
+               libboost-test-dev,
+               libboost-thread-dev,
+               libssl-dev,
+               libtool
+Standards-Version: 3.9.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: icinga2
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
