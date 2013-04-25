@@ -2,15 +2,24 @@ Source: icinga2
 Section: admin
 Priority: extra
 Maintainer: Alexander Wirt <formorer@debian.org>
-Build-Depends: autotools-dev,
+Build-Depends: asciidoc,
+               automake,
+               autotools-dev,
+               bison,
                debhelper (>= 9),
+               doxygen,
+               flex,
+               g++,
                libboost-dev,
+               libboost-program-options-dev,
+               libboost-signals-dev,
                libboost-system-dev,
                libboost-test-dev,
                libboost-thread-dev,
-               python-dev,
+               libltdl-dev,
                libssl-dev,
-               libtool
+               libtool,
+               python-dev
 Standards-Version: 3.9.3
 Homepage: <insert the upstream URL, if relevant>
 
@@ -32,4 +41,3 @@ Description: host and network monitoring system
     be run during service or host events)
   * web output: current status, notifications, problem history, log
     file, etc.
-
