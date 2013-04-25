@@ -1,5 +1,5 @@
 Source: icinga2
-Section: unknown
+Section: admin
 Priority: extra
 Maintainer: Alexander Wirt <formorer@debian.org>
 Build-Depends: autotools-dev,
@@ -8,6 +8,7 @@ Build-Depends: autotools-dev,
                libboost-system-dev,
                libboost-test-dev,
                libboost-thread-dev,
+               python-dev,
                libssl-dev,
                libtool
 Standards-Version: 3.9.3
@@ -16,5 +17,19 @@ Homepage: <insert the upstream URL, if relevant>
 Package: icinga2
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: host and network monitoring system
+ Icinga is a modular monitoring framework for hosts, services, and
+ networks, based on the Nagios project. It is designed to be easy to
+ understand and modify to fit any need.
+ .
+ Features include:
+  * monitoring of network services via ping, SMTP, POP3, HTTP, NNTP, or
+    TCP port;
+  * plugin interface to allow for user-developed service checks
+  * contact notifications when problems occur and get resolved (via
+    email, pager, or user-defined method)
+  * support for proactive problem resolution (handlers can be defined to
+    be run during service or host events)
+  * web output: current status, notifications, problem history, log
+    file, etc.
+
